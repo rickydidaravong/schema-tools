@@ -42,12 +42,12 @@
     "lodash.reduce": "^4.6.0",
     "lodash.set": "4.3.2",
     "quote": "0.4.0",
-    "ramda": "0.25.0"
+    "ramda": "0.26.1"
   },
   "devDependencies": {
     "@types/lodash.camelcase": "4.3.6",
     "@types/node": "9.6.50",
-    "@types/ramda": "0.25.34",
+    "@types/ramda": "0.26.16",
     "ava": "2.2.0",
     "ava-ts": "0.25.2",
     "common-tags": "1.8.0",
