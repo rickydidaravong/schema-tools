@@ -76,9 +76,10 @@ export type JsonProperties = {
 // describes roughly http://json-schema.org/examples.html
 export type JsonSchema = {
   title: string
-  type: 'object'
+  type: JsonPropertyTypes
   description?: string
   properties?: JsonProperties
+  items?: JsonProperty
   patternProperties?: object
   // which properties are MUST have
   required?: string[] | true
