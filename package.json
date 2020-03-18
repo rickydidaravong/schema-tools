@@ -4,7 +4,7 @@
   "description": "Validate, sanitize and document JSON schemas",
   "main": "dist",
   "module": "src",
-  "types": "src",
+  "types": "dist/index.d.ts",
   "scripts": {
     "prettier": "prettier --write 'src/**/*.ts'",
     "lint": "tslint --project .",
@@ -13,7 +13,7 @@
     "postbuild": "npm run check-transpiled-correctly",
     "check-transpiled-correctly": "node .",
     "deps": "deps-ok",
-    "size": "t=\"$(npm pack .)\"; wc -c \"${t}\"; tar tvf \"${t}\"; rm \"${t}\";",
+    "size": "npm pack --dry",
     "semantic-release": "semantic-release",
     "pretest": "npm run build",
     "test": "npm run unit",
@@ -42,24 +42,24 @@
     "lodash.reduce": "^4.6.0",
     "lodash.set": "4.3.2",
     "quote": "0.4.0",
-    "ramda": "0.25.0"
+    "ramda": "0.25.0",
+    "@types/ramda": "0.25.47"
   },
   "devDependencies": {
     "@types/lodash.camelcase": "4.3.6",
-    "@types/node": "9.6.50",
-    "@types/ramda": "0.25.34",
-    "ava": "2.2.0",
+    "@types/node": "9.6.55",
+    "ava": "2.4.0",
     "ava-ts": "0.25.2",
     "common-tags": "1.8.0",
     "deps-ok": "1.4.1",
     "husky": "1.3.1",
     "jsen": "0.6.6",
-    "prettier": "1.18.2",
-    "semantic-release": "15.13.18",
+    "prettier": "1.19.1",
+    "semantic-release": "15.14.0",
     "terminal-banner": "1.1.0",
     "ts-node": "7.0.1",
-    "tslint": "5.18.0",
-    "typescript": "3.3.4000"
+    "tslint": "5.20.1",
+    "typescript": "3.8.3"
   },
   "repository": {
     "type": "git",
